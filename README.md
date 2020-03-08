@@ -7,3 +7,4 @@ Current wait times are taken by web scraping a travel website with Beautiful Sou
 
 In the future, this application could be expanded to include an option to add fast passes into the calculations. Although we applied our program to Disneyworld’s Magic Kingdom, we believe that this program can be applied to any theme park that has enough data on its wait times. 
  
+run python GUI.py
