@@ -78,7 +78,6 @@ def choose(var):
     global month 
 
     all_rides1 = ride_pkg.load_rides('mkRides.csv')
-    all_rides1 = sorted(all_rides1.items())
     all_rides1 = dict(all_rides1)
     all_rides = {}
     for r in range(len(all_rides1)):
@@ -86,6 +85,7 @@ def choose(var):
         if var[r] == 1:
             x = keys[r]
             all_rides[x] = all_rides1[x]
+    print(all_rides)
     walk_times = api_pkg.load_walk('walk_times.csv')
     wait_record = data_pkg.load_record('wait_record.csv')
     wait_times = wait_pkg.load_wait('web_wait.csv')
